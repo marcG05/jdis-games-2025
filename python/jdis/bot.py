@@ -1,7 +1,7 @@
 import typing
 from .utils import *
 
-TOKEN = "YOUR_TOKEN_HERE"
+TOKEN = "p647772y"
 
 async def on_tick(state: GameState) -> typing.Union[MoveAction, PhaseAction, OpenChestAction, UseItemAction, SegFaultAction, SkipAction]:
     """
