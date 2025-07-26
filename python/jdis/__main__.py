@@ -38,6 +38,7 @@ async def on_message(data):
 
 async def main():
     WS = os.getenv("WS", "ws")
+    print(WS)
     async with aiohttp.ClientSession() as client:
         async with client.ws_connect(f"wss://games.jdis.ca/{WS}") as ws:
             await ws.send_str(LinkMessage(TOKEN).to_json())
